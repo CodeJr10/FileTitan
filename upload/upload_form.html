@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Upload Example</title>
+  </head>
+  <body>
+    <h2>Upload a File</h2>
+    <div class="form-container">
+      <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="fileToUpload" class="upload-btn">Choose a File</label>
+        <input type="file" name="fileToUpload" id="fileToUpload" />
+        <p class="file-label">Select a file to upload</p>
+
+        <input type="submit" value="Upload File" name="submit" />
+      </form>
+      <p class="success-message">The file has been uploaded.</p>
+      <p class="error-message">
+        Sorry, there was an error uploading your file.
+      </p>
+    </div>
+  </body>
+  <style>
+    /* Style the form container */
+    .form-container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    /* Style the file input */
+    input[type="file"] {
+      display: none; /* Hide the default file input */
+    }
+
+    /* Style the custom file input button */
+    .upload-btn {
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      text-transform: uppercase;
+    }
+
+    /* Style the file input label */
+    .file-label {
+      font-weight: 700;
+      text-align: center;
+    }
+
+    /* Style the file name display */
+    .file-name {
+      font-size: 14px;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    /* Style the submit button */
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    /* Style the success message */
+    .success-message {
+      color: #4caf50;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    /* Style the error message */
+    .error-message {
+      color: #ff5733;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</html>
